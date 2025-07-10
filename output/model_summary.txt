@@ -1,0 +1,14 @@
+Series: returns 
+ARIMA(0,0,1) with non-zero mean 
+
+Coefficients:
+          ma1   mean
+      -0.1487  1e-04
+s.e.   0.0334  5e-04
+
+sigma^2 = 0.0003133:  log likelihood = 2339.06
+AIC=-4672.13   AICc=-4672.1   BIC=-4657.74
+
+Training set error measures:
+                       ME       RMSE        MAE MPE MAPE      MASE       ACF1
+Training set 1.327699e-06 0.01767943 0.01290785 NaN  Inf 0.6396795 0.00102585
