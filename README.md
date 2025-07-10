@@ -61,6 +61,25 @@ Analisis data historis saham PT Astra International Tbk (ASII.JK) dengan pendeka
 
 ---
 
+# Insights
+Model Moving Average MA(1) dipilih karena memiliki performa terbaik berdasarkan nilai AIC dan BIC dibandingkan model AR(1) dan ARMA(1,1). Selain itu, hasil diagnostik residual menunjukkan bahwa tidak ada autokorelasi yang signifikan, yang berarti model ini cukup layak untuk digunakan dalam prediksi jangka pendek.
+
+Prediksi return dalam 5 hari ke depan menunjukkan pergerakan yang relatif stabil, tanpa lonjakan signifikan. Hal ini mengindikasikan bahwa saham ASII.JK berada dalam fase yang cenderung tenang dan tidak volatil dalam jangka sangat pendek.
+
+Jika dikonversi ke harga saham, prediksi menunjukkan rentang harga yang masih dalam batas wajar, dengan interval kepercayaan yang cukup sempit. Ini menunjukkan bahwa ketidakpastian model relatif rendah.
+
+Dari sisi evaluasi model, error pada training set cukup kecil:
+
+RMSE: 0.0177
+
+MAE: 0.0129
+
+MASE: 0.6397, menunjukkan bahwa model ini lebih baik dibandingkan naive forecast
+
+Nilai-nilai ini mendukung bahwa model MA(1) sudah cukup efisien dan akurat dalam menangkap pola return harian ASII.JK.
+
+Model ini dapat dijadikan sebagai baseline untuk analisis teknikal jangka pendek, namun sebaiknya tetap dikombinasikan dengan indikator teknikal tambahan atau data fundamental untuk mendukung pengambilan keputusan investasi yang lebih menyeluruh.
+
 ## Contact me at
 
 Saskia – [https://linkedin.com/in/saskiaiqlimab]
