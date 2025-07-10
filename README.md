@@ -1,11 +1,11 @@
 
-# 📈 Time Series Forecasting: Saham ASII.JK (Astra International)
+# Time Series Forecasting: Saham ASII.JK (Astra International)
 
 Analisis data historis saham PT Astra International Tbk (ASII.JK) dengan pendekatan **time series modeling (MA(1))** menggunakan bahasa pemrograman R. Proyek ini menampilkan proses data cleaning, eksplorasi, modeling, dan forecasting return serta harga saham harian.
 
 ---
 
-## 🔍 Tujuan Proyek
+## Tujuan Proyek
 
 - Mengambil dan memproses data historis harga penutupan saham ASII.JK dari Yahoo Finance
 - Menghitung **simple return harian**
@@ -16,14 +16,14 @@ Analisis data historis saham PT Astra International Tbk (ASII.JK) dengan pendeka
 
 ---
 
-## 📦 Tools & Library
+## Tools & Library
 
 - Bahasa: `R`
 - Library: `quantmod`, `tseries`, `forecast`, `ggplot2`, `dplyr`
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - Sumber: Yahoo Finance (`ASII.JK`)
 - Periode: **1 Agustus 2021 – 20 April 2025**
@@ -31,7 +31,7 @@ Analisis data historis saham PT Astra International Tbk (ASII.JK) dengan pendeka
 
 ---
 
-## 📈 Visualisasi Hasil
+## Visualisasi Hasil
 
 ### Return Forecast
 ![](plots/return_forecast.png)
@@ -41,7 +41,7 @@ Analisis data historis saham PT Astra International Tbk (ASII.JK) dengan pendeka
 
 ---
 
-## 📌 Hasil Utama
+## Hasil Utama
 
 - Model **MA(1)** menunjukkan performa baik berdasarkan AIC/BIC dan diagnostik residual
 - Prediksi return menunjukkan fluktuasi kecil dalam 5 hari ke depan
@@ -49,7 +49,7 @@ Analisis data historis saham PT Astra International Tbk (ASII.JK) dengan pendeka
 
 ---
 
-## 📁 Struktur File
+## Struktur File
 
 ```
 📂 asii-stock-forecast/
@@ -61,8 +61,8 @@ Analisis data historis saham PT Astra International Tbk (ASII.JK) dengan pendeka
 
 ---
 
-## 📬 Kontak
+## Kontak
 
-Saskia – [LinkedIn kamu]  
-Email: [email kamu]  
-Portofolio lainnya: [GitHub kamu / Rpubs / Notion]
+Saskia – [https://linkedin.com/in/saskiaiqlimab]
+Email: [saskiabilhaq@gmail.com]  
+Portofolio lainnya: [https://github.com/saskiaab]
