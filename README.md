@@ -54,14 +54,14 @@ Analisis data historis saham PT Astra International Tbk (ASII.JK) dengan pendeka
 ```
 📂 asii-stock-forecast/
 ├── 📄 README.md
-├── 📄 asii_forecast.R     # Script utama analisis
-├── 📁 plots/              # Folder visualisasi (.png)
-└── 📁 output/             # (Opsional) Hasil prediksi .csv/.txt
+├── 📄 asii_forecast.R    
+├── 📁 plots/              
+└── 📁 output/             
 ```
 
 ---
 
-## Kontak
+## Contact me at
 
 Saskia – [https://linkedin.com/in/saskiaiqlimab]
 Email: [saskiabilhaq@gmail.com]  
