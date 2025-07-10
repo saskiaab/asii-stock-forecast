@@ -1,10 +1,13 @@
-
-# Load Library
+# Library
 library(quantmod)
 library(tseries)
 library(forecast)
 library(ggplot2)
 library(dplyr)
+
+# Folder
+dir.create("plots", showWarnings = FALSE)
+dir.create("output", showWarnings = FALSE)
 
 # Download data saham ASII.JK
 getSymbols("ASII.JK", src = "yahoo", from = "2021-08-01", to = "2025-04-20")
@@ -37,7 +40,7 @@ Box.test(resid_ma1, lag = 10, type = "Ljung-Box")
 model_ar1 <- Arima(returns, order = c(1, 0, 0))
 model_arma11 <- Arima(returns, order = c(1, 0, 1))
 
-data.frame(
+model_comparison <- data.frame(
   Model = c("MA(1)", "AR(1)", "ARMA(1,1)"),
   AIC = c(AIC(model_ma1), AIC(model_ar1), AIC(model_arma11)),
   BIC = c(BIC(model_ma1), BIC(model_ar1), BIC(model_arma11))
@@ -89,3 +92,20 @@ ggplot() +
   labs(title = "Forecast Harga Saham ASII.JK", x = "Waktu", y = "Harga") +
   theme_minimal()
 ggsave("plots/price_forecast.png")
+
+write.csv(data.frame(Tanggal = time(forecast_result$mean),
+                     Return = as.numeric(forecast_result$mean),
+                     Lower = forecast_result$lower[,2],
+                     Upper = forecast_result$upper[,2]),
+          "output/forecast_return.csv", row.names = FALSE)
+
+
+write.csv(data.frame(Tanggal = time(forecast_result$mean),
+                     Harga = as.numeric(forecasted_price),
+                     Lower = as.numeric(lower_price),
+                     Upper = as.numeric(upper_price)),
+          "output/forecast_price.csv", row.names = FALSE)
+
+write.csv(model_comparison, "output/model_comparison.csv", row.names = FALSE)
+
+capture.output(summary(model_ma1), file = "output/model_summary.txt")
